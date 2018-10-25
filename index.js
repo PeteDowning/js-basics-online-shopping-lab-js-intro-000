@@ -22,7 +22,8 @@ function viewCart() {
   if (cart.length > 0) {
     var string = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
-      string = string.concat()
+      var object = cart[i]
+      string = string.concat("")
     }
   } else {
     return "Your shopping cart is empty."
