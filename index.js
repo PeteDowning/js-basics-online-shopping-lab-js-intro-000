@@ -32,7 +32,7 @@ function viewCart() {
       }
     }
     return string
-  } else if (cart.length == 1) {
+  } else if (cart.length === 1) {
     var string = "In your cart, you have "
     var name = cart[i].itemName
     var price = cart[i].itemPrice
