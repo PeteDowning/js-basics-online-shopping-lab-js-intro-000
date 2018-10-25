@@ -28,7 +28,7 @@ function viewCart() {
       if (i < cart.length - 1) {
         string = string.concat(itemName + " at $" + itemPrice + ", ")
       } else {
-        string = string.concat("${itemName} at \$${itemPrice}.")
+        string = string.concat(itemName + " at $" + itemPrice + ".")
       }
     }
   } else {
