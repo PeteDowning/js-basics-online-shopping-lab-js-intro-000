@@ -31,11 +31,13 @@ function viewCart() {
         string = string.concat("and " + name + " at $" + price + ".")
       }
     }
+    return string
   } else if (cart.length == 1) {
     var string = "In your cart, you have "
     var name = cart[i].itemName
     var price = cart[i].itemPrice
     string = string.concat(name + " at $" + price + ".")
+    return string
   } else {
     return "Your shopping cart is empty."
   }
