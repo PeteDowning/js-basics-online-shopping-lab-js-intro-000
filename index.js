@@ -54,7 +54,7 @@ function removeFromCart(item) {
     var object = cart[i]
     var name = object.itemName
     if (name === item) {
-      delete cart[i] ///MAYBE NOT
+      cart = [...cart.slice(0, i-1), ...cart.slice(i)]
     }
   }
   if (initLength === cart.length) {
