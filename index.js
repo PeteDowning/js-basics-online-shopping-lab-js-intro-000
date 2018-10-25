@@ -54,7 +54,7 @@ function removeFromCart(item) {
     var object = cart[i]
     var name = object[itemName]
     if (name === item) {
-      delete cart[i]
+      delete cart[i] ///MAYBE NOT
     }
   }
   if (initLength === cart.length) {
@@ -66,4 +66,5 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  
 }
