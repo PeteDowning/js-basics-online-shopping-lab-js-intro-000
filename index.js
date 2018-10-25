@@ -22,9 +22,9 @@ function viewCart() {
   if (cart.length > 0) {
     var string = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
-      //var object = cart[i]
-      var itemName = cart[i][itemName]
-      var itemPrice = cart[i][itemPrice]
+      var object = cart[i]
+      var itemName = object.itemName
+      var itemPrice = object.itemPrice
       if (i < cart.length - 1) {
         string = string.concat(itemName + " at $" + itemPrice + ", ")
       } else {
