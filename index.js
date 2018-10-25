@@ -54,7 +54,7 @@ function removeFromCart(item) {
     var object = cart[i]
     var name = object.itemName
     if (name === item) {
-      cart = [...cart.slice(0, i-1), ...cart.slice(i)]
+      cart = cart.splice(i,1)
       return cart
       break
     }
