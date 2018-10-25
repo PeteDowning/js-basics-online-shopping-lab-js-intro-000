@@ -20,6 +20,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if (cart.length > 0) {
+    print(cart)
     var string = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
       // var object = cart[i]
