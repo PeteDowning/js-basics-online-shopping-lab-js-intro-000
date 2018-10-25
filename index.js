@@ -56,7 +56,7 @@ function removeFromCart(item) {
     if (name === item) {
       // REMOVE THIS ITEM
     }
-    
+
   }
   if (initLength === cart.length) {
     return "That item is not in your cart."
