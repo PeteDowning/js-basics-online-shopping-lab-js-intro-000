@@ -20,12 +20,11 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if (cart.length > 0) {
-    
+    for (var i = 0; i < array.length; i++) {
+      array[i]
+    }
   } else {
     return "Your shopping cart is empty."
-  }
-  for (var i = 0; i < array.length; i++) {
-    array[i]
   }
 }
 
