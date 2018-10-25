@@ -26,7 +26,7 @@ function viewCart() {
       var itemName = object[itemName]
       var itemPrice = object[itemPrice]
       if (i < cart.length - 1) {
-        string = string.concat("${itemName} at \$${itemPrice}, ")  
+        string = string.concat("${itemName} at \$${itemPrice}, ")
       } else {
         string = string.concat("${itemName} at \$${itemPrice}.")
       }
@@ -38,6 +38,13 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var tot = 0
+  for (var i = 0; i < cart.length; i++) {
+    var obj = cart[i]
+    var price = obj[itemPrice]
+    tot = tot + price
+  }
+  return tot
 }
 
 function removeFromCart(item) {
