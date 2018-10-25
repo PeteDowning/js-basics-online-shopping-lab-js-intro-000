@@ -52,7 +52,7 @@ function removeFromCart(item) {
   var initLength = cart.length
   for (var i = 0; i < cart.length; i++) {
     var object = cart[i]
-    var name = object[itemName]
+    var name = object.itemName
     if (name === item) {
       delete cart[i] ///MAYBE NOT
     }
