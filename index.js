@@ -55,12 +55,12 @@ function removeFromCart(item) {
     var name = object.itemName
     if (name === item) {
       cart = [...cart.slice(0, i-1), ...cart.slice(i)]
+      return cart
+      break
     }
   }
   if (initLength === cart.length) {
     return "That item is not in your cart."
-  } else {
-    return cart
   }
 }
 
