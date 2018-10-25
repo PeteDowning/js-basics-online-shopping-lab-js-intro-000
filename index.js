@@ -23,7 +23,9 @@ function viewCart() {
     var string = "In your cart, you have "
     for (var i = 0; i < cart.length; i++) {
       var object = cart[i]
-      string = string.concat("")
+      var itemName = object[itemName]
+      var itemPrice = object[itemPrice]
+      string = string.concat("${itemName} at \$${itemPrice}, ")
     }
   } else {
     return "Your shopping cart is empty."
