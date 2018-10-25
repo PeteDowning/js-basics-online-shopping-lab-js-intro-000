@@ -58,8 +58,7 @@ function removeFromCart(item) {
   // write your code here
   var initLength = cart.length
   for (var i = 0; i < cart.length; i++) {
-    var object = cart[i]
-    var name = object.itemName
+    var name = cart[i].itemName
     if (name === item) {
       cart = cart.splice(i,1)
       return cart
