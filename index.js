@@ -41,7 +41,7 @@ function total() {
   var tot = 0
   for (var i = 0; i < cart.length; i++) {
     var obj = cart[i]
-    var price = obj[itemPrice]
+    var price = obj.itemPrice
     tot = tot + price
   }
   return tot
