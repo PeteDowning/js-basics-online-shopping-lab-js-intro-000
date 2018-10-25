@@ -20,8 +20,9 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if (cart.length > 0) {
-    for (var i = 0; i < array.length; i++) {
-      array[i]
+    var string = "In your cart, you have "
+    for (var i = 0; i < cart.length; i++) {
+      string = string.concat()
     }
   } else {
     return "Your shopping cart is empty."
