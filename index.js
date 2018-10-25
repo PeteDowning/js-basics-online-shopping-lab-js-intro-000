@@ -34,8 +34,8 @@ function viewCart() {
     return string
   } else if (cart.length === 1) {
     var string = "In your cart, you have "
-    var name = cart[i].itemName
-    var price = cart[i].itemPrice
+    var name = cart[0].itemName
+    var price = cart[0].itemPrice
     string = string.concat(name + " at $" + price + ".")
     return string
   } else {
