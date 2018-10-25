@@ -28,7 +28,7 @@ function viewCart() {
       if (i < cart.length - 1) {
         string = string.concat(name + " at $" + price + ", ")
       } else {
-        string = string.concat(name + " at $" + price + ".")
+        string = string.concat("and " + name + " at $" + price + ".")
       }
     }
   } else {
