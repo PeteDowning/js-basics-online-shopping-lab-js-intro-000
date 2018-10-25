@@ -62,7 +62,6 @@ function removeFromCart(item) {
     if (name === item) {
       cart = cart.splice(i,1)
       return cart
-      break
     }
   }
   if (initLength === cart.length) {
